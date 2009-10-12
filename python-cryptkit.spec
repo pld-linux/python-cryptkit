@@ -1,9 +1,9 @@
 %define 	module	cryptkit
 Summary:	Small, fast cryptographic toolkit for python
-Summary(pl.UTF-8):	Mały i szybki zbiór narzędzi dla pythona
+Summary(pl.UTF-8):	Mały i szybki zbiór narzędzi kryptograficznych dla pythona
 Name:		python-%{module}
 Version:	0.9
-Release:	0.1
+Release:	1
 License:	BSD
 Group:		Development/Languages/Python
 Source0:	http://dl.sourceforge.net/project/cryptkit/_cryptkit/Complete%20Kit/cryptkit-%{version}.tar.gz
@@ -25,6 +25,10 @@ key exchange and Nyberg-Ruppel signature/verification. Comprehensive
 enough to provide a secure socket alternative to SSL
 
 %description -l pl.UTF-8
+CryptKit to mały, szybki zbiór narzędzi kryptograficznych dla
+pythona. Implementuje Rijndael(AES), SHA 256, kryptografię krzywych
+eliptycznych, wymianę kluczy Diffie-Hellman i sytem Nyberg-Ruppel.
+Wystarczająco jasny aby być alternatywą dla SSL.
 
 %prep
 %setup -q -n %{module}-%{version}
